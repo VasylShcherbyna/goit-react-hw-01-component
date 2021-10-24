@@ -1,4 +1,6 @@
-{
+[
+  {
+    "id": 1,
   "name": "Jacques Gluke",
   "tag": "jgluke",
   "location": "Ocho Rios, Jamaica",
@@ -9,3 +11,5 @@
     "likes": 1308
   }
 }
+
+]
