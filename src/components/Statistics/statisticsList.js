@@ -8,15 +8,15 @@ export default function StatisticsList({ stats }) {
       <h2 className={s.title}>Upload stats</h2>
       <ul className={s.statList}>
         {stats &&
-          stats.map(stat => (
-            <li key={stat.id} className={s.item}>
-              <Statistics label={stat.label} percentage={stat.percentage} />
+          stats.map(({ id, label, percentage }) => (
+            <li key={id} className={s.item}>
+              <Statistics label={label} percentage={percentage} />
             </li>
           ))}
       </ul>
     </section>
   );
-}
+};
 
 StatisticsList.propTypes = {
   stats: PropTypes.arrayOf(
